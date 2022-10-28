@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap");
+
+body {
+    font-size: 16px;
+    font-family: Oswald, Helvetica, sans-serif;
+}
+
+main {
+    max-width: 780px;
+    margin: 1rem auto;
+    line-height: 1.5;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+h2 {
+    font-family: Roboto, Arial, sans-serif;
+    text-align: center;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(46, 68, 129);
+    font-style: italic;
+}
+
+.banner, footer {
+    background-color: rgb(209, 238, 178);
+    box-shadow: 8px 7px 7px 7px rgba(174, 219, 122, 0.96);
+    display: grid;
+    padding: 10px;
+    border-radius: 10px/20px;
+    width: 100%;
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+}
+
+.name {
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+}
+
+.card {
+    width: 300px;
+    background-color: rgb(163, 240, 214);
+    border: 2px solid rgb(209, 238, 178);
+    box-shadow: 8px 7px 7px 7px rgba(174, 219, 122, 0.96);
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h3 {
+    background-color: #313630;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    margin: 1rem .5rem 0 .5rem;
+    padding: .5rem;
+}
+
+img {
+    max-width: 100%;
+    margin-top: 1rem;
+    justify-self: center;
+}
