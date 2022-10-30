@@ -9,6 +9,12 @@ header{
     display: inline-block;
 }
 
+.container, ul {
+    list-style:disc;
+    text-align: center;
+    list-style-position: inside;
+}
+
 img {
     background-color: #336c22;
     box-shadow: 7 12 20px #336c22;
