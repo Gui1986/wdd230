@@ -162,6 +162,7 @@ li {
 }
 
 footer {
+    font-size: 14px;
     margin: 0 auto;
     max-width: 800px;
     text-align: center;
