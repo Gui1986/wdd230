@@ -19,6 +19,8 @@
 
     header img {
         margin-right: 0;
+        height: 100px;
+        width: 100px; 
     }
 
     .parent {
@@ -26,7 +28,9 @@
     }
 
     .card01,
-    .card02 {
+    .card02,
+    .card03,
+    .card04 {
         width: 100%;
         margin-left: 0;
     }
@@ -51,5 +55,12 @@
         font-weight: bold;
         margin-bottom: 10px;
     }
+
+    .wireframe {
+        width: 100%;
+        margin-left: 0;
+        
+    }
+    
 }
 
