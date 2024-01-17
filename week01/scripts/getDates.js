@@ -7,3 +7,5 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('lastModified').textContent = 'Last Modified: ' + currentDateTime.toLocaleString('en');
 
 });
+
+
