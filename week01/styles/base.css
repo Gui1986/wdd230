@@ -46,11 +46,25 @@ header img {
     justify-content: center;
 }
 
+h2 {
+    font-size: 1.2rem;
+    color: #1c641c;
+    text-align: left;
+    margin: 1rem;
+}
+
+nav {
+	max-width: 700px;
+	margin: 1rem auto;
+}
+
 nav {
     background-color: #333;
     margin: 0 auto;
-    max-width: 800px;
+    margin: 0.75rem auto;
+    max-width: 700px;
     width: 100%;
+    
 }
 
 nav ul {
@@ -75,9 +89,10 @@ nav a {
     text-align: center;
 }
 
-nav a:hover {
-    color: rgb(73, 230, 52);
+.navigation li a:hover {
     text-decoration: underline;
+    color: rgb(73, 230, 52);
+    font-weight: 700;
 }
 
 main {
@@ -184,4 +199,68 @@ footer {
 
 .copyright {
     margin-right: 1%;
+}
+
+h1 {
+	text-align: left;
+	font-family: times, serif;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+}
+
+
+/*hamburger menu stars here*/
+#menu {
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: .25rem .75rem;
+    background-color: yellow;
+    color: black;
+    position: absolute;
+    top: 5rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+    color: #3e8f40;
+    font-weight: bold;
+}
+
+#menu.open::before {
+    content: "❎";
+    font-size: 1.2rem;
+}
+  
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.navigation li, .open li {
+    display: none;
+}
+
+.navigation li a, .open li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.stuff {
+    margin: .5m;
+    border: 1px solid rgba(0, 0, 0, .1);
+    background-color: #bed;
+    max-width: 580px;
+    height: 100vh;
 }
