@@ -46,7 +46,14 @@ header img {
     justify-content: center;
 }
 
-h2 {
+.identName {
+	text-align: left;
+	font-family: times, serif;
+	font-size: 25px;
+	margin-left: 1rem;
+}
+
+.studClass {
     font-size: 1.2rem;
     color: #1c641c;
     text-align: left;
@@ -197,12 +204,6 @@ footer {
     margin-right: 1%;
 }
 
-h1 {
-	text-align: left;
-	font-family: times, serif;
-	font-size: 25px;
-	margin-left: 1rem;
-}
 
 /*hamburger menu stars here*/
 #menu {

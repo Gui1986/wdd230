@@ -35,15 +35,13 @@
         margin-left: 0;
     }
 
-    h1 {
+    .identName {
         font-size: 20px;
-    }
-
-    h1 {
         grid-column: 1 / -1; 
         text-align: center;
         font-size: 1rem;
         border-bottom: 1px solid rgb(163, 159, 159);
+        color: #ffffff;
     }
 
     .parent h3 {
@@ -61,19 +59,20 @@
         margin-left: 0;
         
     }
-    
 }
 
 @media (min-width: 820px) {
-	h1 {
+	.identName {
 		font-size: 2.5rem;
 		margin-left: 0;
 		text-align: center;
+        color: #ffffff;
 	}
 	
-	h2 {
+	.studClass {
 		font-size: 2rem;
 		text-align: center;
+
 	}
 
 	#menu {
