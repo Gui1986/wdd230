@@ -183,14 +183,14 @@ li {
     box-shadow: 5px 5px 5px rgb(112, 112, 112);
 }
 
-.wheterImage {
+.whetherImage {
     height: 150px;
     width: 200px;
     display: block;
     margin: auto; 
 }
 
-.wheterToday {
+.whetherToday {
     text-align: left;
     font-size: 15px;
     color: #3e8f40;
