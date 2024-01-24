@@ -38,14 +38,11 @@
             </ul>
             <div class="heroImage">
                 <picture>
-                    <!-- Mobile view image (up to 100px) -->
                     <source media="(max-width: 100px)" type="image/webp" srcset="images/temple-mobile.webp 1x, images/temple-mobile-2x.webp 2x">
-                    <!-- Larger view image (up to 960px in landscape orientation) -->
                     <source media="(min-width: 401px) and (max-width: 960px) and (orientation: landscape)" type="image/webp" srcset="images/temple-large.webp 1x, images/temple-large-2x.webp 2x">
-                    <!-- Fallback image for browsers that do not support the <picture> element or the specified media queries -->
                     <img src="images/temple-large.webp" alt="Latter-day Temple">
                 </picture>
-                <span>Salvador, Brazil Temple</span>
+                <span class="heroText">Salvador, Brazil Temple</span>
             </div>
         </nav>
     </div>
@@ -68,13 +65,11 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, quis magnam esse beatae fuga quod repudiandae, atque accusantium ducimus. </p>
         </section>
     </main>
-
     <div class="grid-container">
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123864.18053477512!2d-46.729214!3d-23.473293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a9e37581575%3A0xd604b35b40d7d2f7!2sS%C3%A3o%20Paulo%2C%20State%20of%20S%C3%A3o%20Paulo%2C%20Brazil!5e0!3m2!1sen!2sus!4v1641669504115!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>
-    
     <footer>
         <div class="copyright">&copy; <span id="currentYear"></span> Copyright © Brigham Young University-Idaho | All rights
             reserved | Marcos Guimarães | São Paulo/Brazil
@@ -82,10 +77,9 @@
         </div>
         <img class="flag" src="images/brazil-flag.png" alt="Brazilian_flag">
     </footer>
-
     <script src="scripts/getDates.js"></script>
     <script src="scripts/menuHam.js"></script>
     <script src="scripts/darkMode.js"></script>
-    
+    <script src="scripts/localStorage.js"></script>
 </body>
 </html>
