@@ -135,7 +135,7 @@ ul {
     display: block;
 }
 
-.heroImage div {
+.heroImage span {
     font-size: 22px;
     position: absolute;
     top: 0;
