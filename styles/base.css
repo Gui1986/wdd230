@@ -141,7 +141,6 @@ ul {
     font-size: 22px;
     top: 0;
     left: 0;
-    transform: translate(-10, -10%);
     width: 100%; 
     max-width: 300px; 
     background-color: rgba(57, 203, 248, 0.7);
