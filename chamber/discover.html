@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcos Guimarães - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230, Marcos Guimarães, Jardim Rizzo Chamber of Commerce.">
+    <meta name="author" content="Marcos Guimarães">
+    <meta property="og:title" content="Marcos Guimarães - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://gui1986.github.io/wdd230/">
+    <meta property="og:url" content="https://gui1986.github.io/wdd230/">
+    <meta property="og:description" content="WDD 230, Marcos Guimarães, Jardim Rizzo Chamber of Commerce.">
+    <meta property="og:locale" content="en_US">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+</head>
+<body>
+    <div id="mode">
+        🔆/🌒
+    </div>
+    <div class="container">
+        <header>
+            <img src="images/logo.jpg" alt="chamber_logo">
+            <img class="facebookImage" src="images/facebook.png" alt="facebook">
+            <img class="instagramImage" src="images/instagram.png" alt="instagram">
+            <h1>Jardim Rizzo Chamber of Commerce</h1>
+        </header>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="index.html">Chamber</a></li>
+                <li><a href="/chamber-site-plan.html">Site Plan</a></li>
+                <li><a href="form">Form</a></li>
+            </ul>
+            <div class="imageContainer">
+                <img class="bannerImage" src="images/jardim_rizzo_photo.jpg" alt="chamber_logo">
+                <a class="joinButton" href="index.html" target="_blank" rel="noopener noreferrer">Join Now</a>
+            </div>
+        </nav>
+    </div>
+    <main class="main-discovery">
+        <div class="sidebar">
+            <!-- Sidebar content -->
+            <div class="info">
+                <h4>Population:</h4>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate maiores ullam nam. Quidem, ipsum  molestias, consectetur impedit libero ducimus excepturi dolore blanditiis. Esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quisquam quaerat nam laboriosam vitae dicta eum quod tempore placeat aliquid velit ad, qui id amet nesciunt natus, accusantium.
+            </div>
+            <div class="info">
+                <h4>Economy</h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aliquam porro ipsum molestiae cum? Voluptate, accusantium! Fugiat deserunt laboriosam quia dolor.  
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus sunt, nesciunt perspiciatis ea voluptatibus obcaecati quam doloribus. Aut, doloribus illo!
+            </div>
+            <div class="info">
+                <h4>Local Festival:</h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aliquam porro ipsum molestiae cum? Voluptate, accusantium! Fugiat deserunt laboriosam quia dolor. Asperiores perspiciatis vel quam quibusdam distinctio tempora. Reiciendis, magni.
+            </div>
+            <div class="info">
+                <h4>Statistical Data:</h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dolorum optio, fugit et pariatur qui ducimus ut necessitatibus voluptatum excepturi omnis laboriosam sint eius, corrupti voluptatem, fuga quas! In, pariatur.
+                pariatur qui ducimus ut necessitatibus. excepturi omnis, excepturi omnis. Sit amet consectetur 
+            </div>
+        </div>
+        <div class="sidebar">
+            <img class="localPhotos" src="images/historical-landmark.jpg" alt="Image 1" loading="lazy">
+            <img class="localPhotos" src="images/city-skyline.jpg" alt="Image 2" loading="lazy">
+            <img class="localPhotos" src="images/nature_scenery.jpg" alt="Image 3" loading="lazy">
+            <img class="localPhotos" src="images/avenue-Paulista.jpg" alt="Image 4" loading="lazy">
+            <img class="localPhotos" src="images/se-downtown.jpg" alt="Image 5" loading="lazy">
+            <img class="localPhotos" src="images/ipiranga-museum.jpg" alt="Image 6" loading="lazy">
+        </div>
+        <div id="message"></div>
+    </main>
+    <footer>
+        <div class="copyright">&copy; <span id="currentYear"></span> Copyright © Brigham Young University-Idaho | All rights
+            reserved | Marcos Guimarães | São Paulo/Brazil
+            <div id="lastModified"></div>
+        </div>
+        <img class="flag" src="images/brazil-flag.png" alt="Brazilian_flag">
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/menuHam.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/localStorage.js"></script>
+</body>
+</html>
