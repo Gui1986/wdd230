@@ -315,3 +315,59 @@ footer {
     top: 70px; 
     font-size: 25px;
 }
+
+/* Add your CSS styles for discover.html here */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.sidebar {
+    padding: 5px;
+    height: 100vw;
+    width: 100%;
+}
+
+.localPhotos{
+    justify-content: center;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    align-items: center;
+    padding: 5px;
+    height: 200px;
+    width: 300px;
+    border-radius: 3%;
+    box-shadow: 5px 5px 5px rgb(112, 112, 112);
+    margin-top: 10px;
+}
+
+h4 {
+    margin-bottom: 10%;
+}
+
+.info {
+    border: 0.5px solid #000000;
+    text-align: justify;
+    margin-bottom: 10%;
+    margin-top: auto;
+    padding: 5%;
+    margin-left: 7%;
+    box-shadow: 5px 5px 5px rgb(112, 112, 112);
+    border-radius: 3%;
+    flex-direction: column;
+}
+
+/* Add hover effect to the gallery images */
+.localPhotos:hover {
+    transform: scale(1.1); /* Increase the size of the image by 10% on hover */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}

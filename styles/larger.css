@@ -112,6 +112,26 @@
         width: 100%;
         margin-left: 0;
     }
+
+    
+@media screen and (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+
+    }
+
+    .info {
+        margin-bottom: 10px;
+    }
+
+    .localPhotos {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
 }
 
 
