@@ -6,31 +6,39 @@ document.addEventListener("DOMContentLoaded", function() {
         "Wow, you're back so soon! Welcome!"
     ];
 
-    // Retrieve the index of the last displayed message from local storage
-    let lastIndex = localStorage.getItem("lastIndex");
+    // Retrieve the last visit date from localStorage
+    let lastVisitDate = localStorage.getItem("lastVisitDate");
 
-    // If the index doesn't exist or is out of bounds of the array, set it to 0
-    if (lastIndex === null || lastIndex >= messages.length) {
-        lastIndex = 0;
+    // If last visit date is not available, set it to the current date
+    if (!lastVisitDate) {
+        lastVisitDate = new Date().toISOString();
+        localStorage.setItem("lastVisitDate", lastVisitDate);
     }
 
-    // Display the next message
-    showMessage(messages[lastIndex]);
+    // Calculate the number of days since the last visit
+    let currentDate = new Date();
+    let daysSinceLastVisit = Math.floor((currentDate - new Date(lastVisitDate)) / (1000 * 60 * 60 * 24));
 
-    // Update the index for the next message
-    let nextIndex = (parseInt(lastIndex) + 1) % messages.length;
+    // Choose a message based on the number of days since the last visit
+    let messageIndex = 0; // Default message
+    if (daysSinceLastVisit > 0 && daysSinceLastVisit <= messages.length) {
+        messageIndex = daysSinceLastVisit - 1;
+    }
 
-    // Store the next index in local storage
-    localStorage.setItem("lastIndex", nextIndex.toString());
+    // Display the message
+    showMessage(messages[messageIndex]);
+
+    // Update the last visit date
+    localStorage.setItem("lastVisitDate", currentDate.toISOString());
 });
 
 // Function to display message on the page
 function showMessage(message) {
-    // Create a new div element for the message
+    // Create message element
     let messageDiv = document.createElement("div");
     messageDiv.textContent = message;
 
-    // Apply styles to the message div
+    // Apply styles
     messageDiv.style.backgroundColor = "#3e8f40";
     messageDiv.style.color = "white";
     messageDiv.style.padding = "10px";
@@ -41,7 +49,7 @@ function showMessage(message) {
     messageDiv.style.transform = "translateX(-50%)";
     messageDiv.style.zIndex = "999";
 
-    // Create a close button for the message
+    // Create close button
     let closeButton = document.createElement("button");
     closeButton.textContent = "Close";
     closeButton.style.backgroundColor = "#fff";
@@ -52,15 +60,14 @@ function showMessage(message) {
     closeButton.style.cursor = "pointer";
     closeButton.style.borderRadius = "3px";
 
-    // Add click event listener to the close button
+    // Add click event listener to close button
     closeButton.addEventListener("click", function() {
-        // Remove the message div from the DOM
         document.body.removeChild(messageDiv);
     });
 
-    // Append the close button to the message div
+    // Append close button to message element
     messageDiv.appendChild(closeButton);
 
-    // Append the message div to the body of the document
+    // Append message element to document body
     document.body.appendChild(messageDiv);
 }
