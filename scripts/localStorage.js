@@ -1,37 +1,25 @@
-// JavaScript logic for lazy loading images and sidebar content based on localStorage
 document.addEventListener("DOMContentLoaded", function() {
-    // Check localStorage for last visit date
-    let lastVisit = localStorage.getItem("lastVisit");
+    // Array of messages
+    let messages = [
+        "Welcome back! We're glad to see you again.",
+        "Welcome back! It's nice to have you here again.",
+        "Wow, you're back so soon! Welcome!"
+    ];
 
-    // Get current date
-    let currentDate = new Date();
+    // Retrieve the index of the last displayed message from local storage
+    let lastIndex = localStorage.getItem("lastIndex");
 
-    // Update last visit date in localStorage
-    localStorage.setItem("lastVisit", currentDate.toDateString());
-
-    // Calculate the difference in days
-    let timeDiff = 0;
-    if (lastVisit) {
-        let lastVisitDate = new Date(lastVisit);
-        timeDiff = Math.ceil((currentDate - lastVisitDate) / (1000 * 3600 * 24));
+    // If the index doesn't exist or is out of bounds of the array, set it to 0
+    if (lastIndex === null || lastIndex >= messages.length) {
+        lastIndex = 0;
     }
 
-    // Get sidebar content element
-    let sidebarContent = document.getElementById("sidebar-content");
+    // Display the next message
+    alert(messages[lastIndex]);
 
-    // Generate appropriate message based on the difference in days
-    if (timeDiff === 0) {
-        sidebarContent.innerText = "Welcome! Let us know if you have any questions.";
-    } else if (timeDiff < 1) {
-        sidebarContent.innerText = "Back so soon! Awesome!";
-    } else {
-        sidebarContent.innerText = "You last visited " + timeDiff + " day" + (timeDiff === 1 ? "" : "s") + " ago.";
-    }
+    // Update the index for the next message
+    let nextIndex = (parseInt(lastIndex) + 1) % messages.length;
 
-    // Lazy load images
-    let lazyImages = document.querySelectorAll('img[data-src]');
-    lazyImages.forEach(function(lazyImg) {
-        lazyImg.src = lazyImg.dataset.src;
-        lazyImg.removeAttribute('data-src');
-    });
+    // Store the next index in local storage
+    localStorage.setItem("lastIndex", nextIndex.toString());
 });
