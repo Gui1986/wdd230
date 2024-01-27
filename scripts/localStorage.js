@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Display the next message
-    alert(messages[lastIndex]);
+    showMessage(messages[lastIndex]);
 
     // Update the index for the next message
     let nextIndex = (parseInt(lastIndex) + 1) % messages.length;
@@ -23,3 +23,44 @@ document.addEventListener("DOMContentLoaded", function() {
     // Store the next index in local storage
     localStorage.setItem("lastIndex", nextIndex.toString());
 });
+
+// Function to display message on the page
+function showMessage(message) {
+    // Create a new div element for the message
+    let messageDiv = document.createElement("div");
+    messageDiv.textContent = message;
+
+    // Apply styles to the message div
+    messageDiv.style.backgroundColor = "#3e8f40";
+    messageDiv.style.color = "white";
+    messageDiv.style.padding = "10px";
+    messageDiv.style.borderRadius = "5px";
+    messageDiv.style.position = "fixed";
+    messageDiv.style.bottom = "20px";
+    messageDiv.style.left = "50%";
+    messageDiv.style.transform = "translateX(-50%)";
+    messageDiv.style.zIndex = "999";
+
+    // Create a close button for the message
+    let closeButton = document.createElement("button");
+    closeButton.textContent = "Close";
+    closeButton.style.backgroundColor = "#fff";
+    closeButton.style.color = "#3e8f40";
+    closeButton.style.border = "none";
+    closeButton.style.padding = "5px 10px";
+    closeButton.style.marginLeft = "10px";
+    closeButton.style.cursor = "pointer";
+    closeButton.style.borderRadius = "3px";
+
+    // Add click event listener to the close button
+    closeButton.addEventListener("click", function() {
+        // Remove the message div from the DOM
+        document.body.removeChild(messageDiv);
+    });
+
+    // Append the close button to the message div
+    messageDiv.appendChild(closeButton);
+
+    // Append the message div to the body of the document
+    document.body.appendChild(messageDiv);
+}
