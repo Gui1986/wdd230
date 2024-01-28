@@ -184,41 +184,5 @@
             margin-bottom: 20px;
         }
     }
-
 }
 
-@media screen and (max-width: 820px) {
-    .main-discovery {
-        grid-template-columns: 1fr;
-    }
-
-    .sidebar {
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-    }
-
-    .localPhotos {
-        width: 90%;
-        margin-left: 5%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .localPhotos {
-        width: 80%;
-        margin-left: 10%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .main-discovery {
-        grid-template-columns: 1fr;
-    }
-
-    .sidebar {
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-    }
-}
