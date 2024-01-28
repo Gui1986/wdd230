@@ -376,7 +376,6 @@ footer {
 }
 
 /* discovery.html styles */
-
 .main-discovery {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -420,6 +419,5 @@ h4 {
 }
 
 .localPhotos:hover {
-    transform: scale(1.1);
-    transition: transform 0.2s ease;
+    transform: scale(1.1); 
 }
