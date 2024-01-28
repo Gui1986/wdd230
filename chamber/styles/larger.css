@@ -132,16 +132,30 @@
         width: 100%;
     }
 
+    @media screen and (max-width: 820px) and (min-width: 600px) {
+        /* Styles for screen widths between 600px and 820px */
+    }
+    
+    @media only screen and (max-width: 600px) {
+        /* Styles for screen widths up to 600px */
+    }
+    
+    @media only screen and (max-width: 790px) {
+        /* Styles for screen widths up to 790px */
+    }
+    
     @media screen and (max-width: 768px) {
+        /* Styles for screen widths up to 768px */
         .main-discovery {
-          grid-template-columns: 1fr; 
+            grid-template-columns: 1fr;
         }
-      
+    
         .sidebar {
-          width: 100%; 
-          height: auto; 
-          margin-bottom: 20px; 
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
         }
-      }
+    }
+    
 
 }
