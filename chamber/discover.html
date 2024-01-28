@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/chamber/images/favicon.png">
 </head>
 <body>
     <div id="mode">
@@ -47,8 +47,7 @@
         </nav>
     </div>
     <main class="main-discovery">
-        <div class="sidebar">
-            <!-- Sidebar content -->
+        <aside class="sidebar">
             <div class="info">
                 <h4>Population:</h4>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate maiores ullam nam. Quidem, ipsum  molestias, consectetur impedit libero ducimus excepturi dolore blanditiis. Esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quisquam quaerat nam laboriosam vitae dicta eum quod tempore placeat aliquid velit ad, qui id amet nesciunt natus, accusantium.
@@ -67,16 +66,58 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dolorum optio, fugit et pariatur qui ducimus ut necessitatibus voluptatum excepturi omnis laboriosam sint eius, corrupti voluptatem, fuga quas! In, pariatur.
                 pariatur qui ducimus ut necessitatibus. excepturi omnis, excepturi omnis. Sit amet consectetur 
             </div>
-        </div>
-        <div class="sidebar">
-            <img class="localPhotos" src="images/historical-landmark.jpg" alt="Image 1" loading="lazy">
-            <img class="localPhotos" src="images/city-skyline.jpg" alt="Image 2" loading="lazy">
-            <img class="localPhotos" src="images/nature_scenery.jpg" alt="Image 3" loading="lazy">
-            <img class="localPhotos" src="images/avenue-Paulista.jpg" alt="Image 4" loading="lazy">
-            <img class="localPhotos" src="images/se-downtown.jpg" alt="Image 5" loading="lazy">
-            <img class="localPhotos" src="images/ipiranga-museum.jpg" alt="Image 6" loading="lazy">
-        </div>
-        <div id="message"></div>
+        </aside>
+
+        <aside class="sidebar">
+            <!-- Image 1 -->
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/historical-landmark-small.jpg">
+                <source media="(min-width: 601px) and (max-width: 790px)" srcset="images/historical-landmark-medium.jpg">
+                <source media="(min-width: 791px) and (max-width: 820px)" srcset="images/historical-landmark-large.jpg">
+                <source media="(min-width: 821px)" srcset="images/historical-landmark-large.jpg">
+                <img class="localPhotos" src="images/historical-landmark.jpg" alt="Historical Landmark" loading="lazy">
+            </picture>
+            <!-- Image 2 -->
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/city-skyline-small.jpg">
+                <source media="(min-width: 601px) and (max-width: 790px)" srcset="images/city-skyline-medium.jpg">
+                <source media="(min-width: 791px) and (max-width: 820px)" srcset="images/city-skyline-large.jpg">
+                <source media="(min-width: 821px)" srcset="images/city-skyline.jpg">
+                <img class="localPhotos" src="images/city-skyline.jpg" alt="City Skyline" loading="lazy">
+            </picture>
+            <!-- Image 3 -->
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/nature-scenery-small.jpg">
+                <source media="(min-width: 601px) and (max-width: 790px)" srcset="images/nature-scenery-medium.jpg">
+                <source media="(min-width: 791px) and (max-width: 820px)" srcset="images/nature-scenery-large.jpg">
+                <source media="(min-width: 821px)" srcset="images/nature-scenery.jpg">
+                <img class="localPhotos" src="images/nature-scenery.jpg" alt="Nature Scenery" loading="lazy">
+            </picture>
+            <!-- Image 4 -->
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/avenue-paulista-small.jpg">
+                <source media="(min-width: 601px) and (max-width: 790px)" srcset="images/avenue-paulista-medium.jpg">
+                <source media="(min-width: 791px) and (max-width: 820px)" srcset="images/avenue-paulista-large.jpg">
+                <source media="(min-width: 821px)" srcset="images/avenue-paulista.jpg">
+                <img class="localPhotos" src="images/avenue-paulista.jpg" alt="Avenue Paulista" loading="lazy">
+            </picture>
+            <!-- Image 5 -->
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/se-downtown-small.jpg">
+                <source media="(min-width: 601px) and (max-width: 790px)" srcset="images/se-downtown-medium.jpg">
+                <source media="(min-width: 791px) and (max-width: 820px)" srcset="images/se-downtown-large.jpg">
+                <source media="(min-width: 821px)" srcset="images/se-downtown.jpg">
+                <img class="localPhotos" src="images/se-downtown.jpg" alt="Sé Downtown" loading="lazy">
+            </picture>
+            <!-- Image 6 -->
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/ipiranga-museum-small.jpg">
+                <source media="(min-width: 601px) and (max-width: 790px)" srcset="images/ipiranga-museum-medium.jpg">
+                <source media="(min-width: 791px) and (max-width: 820px)" srcset="images/ipiranga-museum-large.jpg">
+                <source media="(min-width: 821px)" srcset="images/ipiranga-museum.jpg">
+                <img class="localPhotos" src="images/ipiranga-museum.jpg" alt="Ipiranga Museum" loading="lazy">
+            </picture>
+        </aside>
     </main>
     <footer>
         <div class="copyright">&copy; <span id="currentYear"></span> Copyright © Brigham Young University-Idaho | All rights

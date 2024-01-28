@@ -375,13 +375,9 @@ footer {
     font-size: 25px;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
+/* discovery.html styles */
 
-main {
+.main-discovery {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
@@ -423,8 +419,7 @@ h4 {
     flex-direction: column;
 }
 
-/* Add hover effect to the gallery images */
 .localPhotos:hover {
-    transform: scale(1.1); /* Increase the size of the image by 10% on hover */
-    transition: transform 0.3s ease; /* Add a smooth transition effect */
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
 }
