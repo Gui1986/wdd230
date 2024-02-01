@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardim Rizzo Chamber of Commerce - Join</title>
+    <meta name="description" content="Join the Jardim Rizzo Chamber of Commerce.">
+    <meta name="author" content="Marcos Guimarães">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+</head>
+
+<body>
+    <div id="mode">
+        🔆/🌒
+    </div>
+    <div class="container">
+        <header>
+            <img src="images/logo.jpg" alt="chamber_logo">
+            <img class="facebookImage" src="images/facebook.png" alt="facebook">
+            <img class="instagramImage" src="images/instagram.png" alt="instagram">
+            <h1>Jardim Rizzo Chamber of Commerce</h1>
+        </header>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/chamber/index.html">Chamber</a></li>
+                <li><a href="./chamber-site-plan.html">Site Plan</a></li>
+                <li><a href="/form.html">Form</a></li>
+            </ul>
+            <div class="imageContainer">
+                <img class="bannerImage" src="images/jardim_rizzo_photo.jpg" alt="chamber_logo">
+            </div>
+        </nav>
+    </div>
+    <main class="parent">
+        <section class="membership-benefits">
+            <h2>Membership Benefits</h2>
+            <ul>
+                <li>Bronze Membership: Benefits here</li>
+                <li>Silver Membership: Benefits here</li>
+                <li>Gold Membership: Benefits here</li>
+                <!-- Include benefits for each membership level -->
+            </ul>
+        </section>
+        <section class="join-form">
+            <h2>Join Us</h2>
+            <form action="thankyou.html" method="get">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required><br><br>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required><br><br>
+                <label for="position">Position:</label>
+                <input type="text" id="title" name="title" pattern="[a-zA-Z\s-]{7,}" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com" required><br><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                <label for="business">Business Name:</label>
+                <input type="text" id="business" name="business" required><br><br>
+                <label for="membership">Membership Level:</label>
+                <select id="membership" name="membership" required>
+                    <option value="NP Membership">NP Membership</option>
+                    <option value="Bronze Membership">Bronze Membership</option>
+                    <option value="Silver Membership">Silver Membership</option>
+                    <option value="Gold Membership">Gold Membership</option>
+                </select><br><br>
+                <label for="description">Business Description:</label><br>
+                <textarea id="description" name="description"></textarea><br><br>
+                <input type="hidden" id="timestamp" name="timestamp" value="current_date_time_here">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="copyright">&copy; <span id="currentYear"></span> Copyright © Brigham Young University-Idaho | All
+            rights
+            reserved | Marcos Guimarães | São Paulo/Brazil
+            <div id="lastModified"></div>
+        </div>
+        <img class="flag" src="images/brazil-flag.png" alt="Brazilian_flag">
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/menuHam.js"></script>
+    <script src="scripts/join.js"></script>
+</body>
+
+</html>

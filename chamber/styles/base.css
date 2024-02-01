@@ -421,3 +421,77 @@ h4 {
 .localPhotos:hover {
     transform: scale(1.1); 
 }
+
+/* Additional styles specific to the join page */
+.membership-benefits {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.membership-benefits h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.membership-benefits ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.membership-benefits li {
+    margin-bottom: 10px;
+}
+
+/* Form styles */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: var(--form-padding);
+    background-color: #f9f9f9; /* Form background color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Label styles */
+label {
+    display: inline-block;
+    width: var(--label-width);
+    margin-bottom: var(--input-margin);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: calc(100% - 16px); /* Input width minus padding */
+    padding: 8px;
+    margin-bottom: var(--input-margin);
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px;
+}
+
+/* Submit button styles */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #4caf50; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Textarea styles */
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 100px; /* Minimum textarea height */
+}
