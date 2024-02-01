@@ -1,0 +1,56 @@
+:root {
+    --form-padding: 20px;
+    --label-width: 120px;
+    --input-margin: 10px;
+    --header-height: 60px;
+    --footer-height: 80px;
+    --nav-width: 200px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: var(--form-padding);
+}
+
+label {
+    display: inline-block;
+    width: var(--label-width);
+    margin-bottom: var(--input-margin);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: var(--input-margin);
+}
+
+.submit {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: var(--input-margin);
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#rating-value {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#mode {
+    position: fixed;
+    right: 75px;
+    top: 70px; 
+    font-size: 25px;
+}
