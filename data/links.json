@@ -4,12 +4,8 @@
         "week": "Week 1",
         "links": [
           {
-            "url": "week01/holygrail.html",
-            "title": "HG Layout"
-          },
-          {
-            "url": "week01/media-query.html",
-            "title": "mQueries"
+            "url": "index.html",
+            "title": "Setup, Review, and Media Queries"
           }
         ]
       },
@@ -17,12 +13,8 @@
         "week": "Week 2",
         "links": [
           {
-            "url": "week02/flexbox.html",
-            "title": "Flexbox"
-          },
-          {
-            "url": "week02/css-variables.html",
-            "title": "CSS Variables"
+            "url": "",
+            "title": "Responsive Design"
           }
         ]
       },
@@ -30,12 +22,8 @@
         "week": "Week 3",
         "links": [
           {
-            "url": "week03/grid.html",
-            "title": "Grid Layout"
-          },
-          {
-            "url": "week03/responsive-web-design.html",
-            "title": "Responsive Design"
+            "url": "form.html",
+            "title": "Responsive Images"
           }
         ]
       },
@@ -43,12 +31,8 @@
         "week": "Week 4",
         "links": [
           {
-            "url": "week04/js-intro.html",
-            "title": "JS Introduction"
-          },
-          {
-            "url": "week04/dom-manipulation.html",
-            "title": "DOM Manipulation"
+            "url": "",
+            "title": "HTML Tables and Forms"
           }
         ]
       },
@@ -56,15 +40,10 @@
         "week": "Week 5",
         "links": [
           {
-            "url": "week05/js-events.html",
-            "title": "JS Events"
-          },
-          {
-            "url": "week05/ajax.html",
-            "title": "Ajax"
+            "url": "",
+            "title": "JSON and API Services"
           }
         ]
       }
     ]
   }
-  
