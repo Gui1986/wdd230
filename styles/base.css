@@ -327,12 +327,12 @@ footer {
 }
 
 .weahter_card {
-    width: 300px; 
+    width: 250px; 
     margin: 0 auto; 
     margin-top: 1%;
     margin-bottom: 1%;
-    color: #000;
-    background-color: #bfffc0; 
+    color:  #fff;
+    background-color:  #5cb15d; 
     padding: 20px; 
     text-align: center; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
@@ -340,5 +340,5 @@ footer {
 
 #description, #temperature {
     font-weight: bold;
-    color: #000;
+    color:  #fff;
 }
