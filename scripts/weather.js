@@ -1,42 +1,39 @@
-// select HTML elements in the document
-const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
+const myTown = document.querySelector('#town');
+const myDescription = document.querySelector('#description');
+const myTemperature = document.querySelector('#temperature');
+const myGraphic = document.querySelector('#grafic');
 
-// Declare a const variable named "url" and assign it a valid URL string as given in the openweathermap api documentation.
-const url = 'https://api.openweathermap.org/data/2.5/weather';
+const myKey = 'fb1b2c9d590e39742e7f3e6cd46eea22';
+// Latitude and longitude for São Paulo, Brazil
+const latitude = -23.5505;
+const longitude = -46.6333;
 
-// Specify the latitude and longitude of Trier, Germany using the information you have gathered and the examples provided.
-const latitude = '49.75';
-const longitude = '6.64';
+const myURL = `//api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${myKey}&units=imperial`;
 
-// Provide your API key: "appid=[enter your key here]"
-const apiKey = 'your_api_key_here';
-
-// Define an asynchronous function named "apiFetch()"
 async function apiFetch() {
-  try {
-    const response = await fetch(`${url}?lat=${latitude}&lon=${longitude}&units=imperial&appid=${apiKey}`);
-    if (response.ok) {
-      const data = await response.json();
-      console.log(data); // testing only
-      displayResults(data);
-    } else {
-      throw Error(await response.text());
+    try {
+      const response = await fetch(myURL);
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data); // testing only
+        displayResults(data); // call displayResults function with data
+      } else {
+          throw Error(await response.text());
+      }
+    } catch (error) {
+        console.log(error);
     }
-  } catch (error) {
-    console.log(error);
   }
+  
+function displayResults(data) {
+    console.log('hello');
+    myTown.innerHTML = data.name;
+    myDescription.innerHTML = data.weather[0].description;
+    myTemperature.innerHTML =`${data.main.temp}&deg;F`;
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+    myGraphic.setAttribute('SRC', iconsrc);
+    myGraphic.setAttribute('alt', data.weather[0].description)
+
 }
 
 apiFetch();
-
-// Build the displayResults function to output to the given HTML document.
-function displayResults(data) {
-  currentTemp.innerHTML = `${data.main.temp}&deg;F`;
-  const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-  let desc = data.weather[0].description;
-  weatherIcon.setAttribute('src', iconsrc);
-  weatherIcon.setAttribute('alt', desc);
-  captionDesc.textContent = `${desc}`;
-}

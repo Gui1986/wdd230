@@ -1,0 +1,49 @@
+.card:first-of-type {
+    background-color: #bef3be; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+  
+  .card:first-of-type h2 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+  
+  .card:first-of-type p {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+  
+  .card:first-of-type img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+  
+  .card:nth-of-type(2) {
+    background-color: #fff; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+  
+  .card:nth-of-type(2) h2 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+  
+  .card:nth-of-type(2) p {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+  
+  .card:nth-of-type(2) img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
