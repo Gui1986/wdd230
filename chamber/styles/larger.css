@@ -136,4 +136,11 @@
         height: auto;
         margin-bottom: 20px;
     }
+
+    @media screen and (max-width: 600px) {
+        .display {
+            grid-template-columns: 1fr; 
+        }
+    }
+
 }

@@ -1,0 +1,68 @@
+{
+    "members": [
+      {
+        "name": "InnovaTech Enterprises",
+        "address": "1234 Innovation Avenue, Lorem ipsum dolor",
+        "phone": "123-456-7890",
+        "website": "Get to know us better and get in touch",
+        "image": "./images/innvatech.png",
+        "membership_level": "Gold",
+        "other_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "name": "NexaGlobal Solutions",
+        "address": "5678 Nexus Street, Lorem ipsum dolor",
+        "phone": "234-567-8901",
+        "website": "Get to know us better and get in touch",
+        "image": "./images/nexaglobal.jpg",
+        "membership_level": "Silver",
+        "other_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "name": "EcoInnovate Ventures",
+        "address": "91011 Greenway Lane, Lorem ipsum dolor",
+        "phone": "345-678-9012",
+        "website": "Get to know us better and get in touch",
+        "image": "./images/ecoInnovate.jpg",
+        "membership_level": "Gold",
+        "other_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "name": "MetaVerse Technologies",
+        "address": "121314 Virtual Boulevard, Lorem ipsum dolor",
+        "phone": "456-789-0123",
+        "website": "Get to know us better and get in touch",
+        "image": "./images/metaverse.jpg",
+        "membership_level": "Bronze",
+        "other_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "name": "SolarScape Solutions",
+        "address": "151617 Sunshine Street, Lorem ipsum dolor",
+        "phone": "567-890-1234",
+        "website": "Get to know us better and get in touch",
+        "image": "./images/solarscape.jpg",
+        "membership_level": "Silver",
+        "other_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "name": "FusionTech Innovations",
+        "address": "181920 Fusion Road, Lorem ipsum dolor",
+        "phone": "678-901-2345",
+        "website": "Get to know us better and get in touch",
+        "image": "./images/fusiontech.png",
+        "membership_level": "Gold",
+        "other_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "name": "VistaSphere Industries",
+        "address": "212223 Horizon Avenue, Lorem ipsum dolor",
+        "phone": "789-012-3456",
+        "website": "Get to know us better and get in touch",
+        "image": "./images/vistasphere.jpg",
+        "membership_level": "Bronze",
+        "other_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+    ]
+  }
+  

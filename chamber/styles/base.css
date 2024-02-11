@@ -223,7 +223,6 @@ li {
     box-shadow: 5px 5px 5px rgb(112, 112, 112);
 }
 
-
 .card03 {
     grid-template-columns: 1fr; 
     grid-template-rows: 1fr;
@@ -494,4 +493,126 @@ input[type="submit"] {
 textarea {
     resize: vertical; /* Allow vertical resizing */
     min-height: 100px; /* Minimum textarea height */
+}
+
+main {
+	margin: 0 auto;
+	padding: 0.5rem;
+	max-width: 800px;
+	background-color: #fff;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #bed;
+	text-align: center;
+}
+
+/* Directory*/
+.cia_id {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #eee;
+    display: flex; /* Added */
+    flex-direction: column; /* Added */
+    align-items: center; /* Added */
+    justify-content: center; /* Added */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+}
+
+.grid .cia_id {
+    text-align: center;
+}
+
+.grid img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px #333;
+}
+
+.grid .cia_id > * {
+    margin: 0.1rem;
+}
+
+.grid .cia_tittle {
+    font-family: "Caveat", cursive;
+    font-size: 1rem; /* Changed from 1.5rem to 1rem */
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list .cia_id {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+}
+
+.list .cia_id > * {
+    margin: 0 1rem;
+}
+
+/* Esta regra oculta as imagens dentro dos elementos .cia_id apenas quando a classe .list está presente */
+.list .cia_id > img {
+    display: none; 
+}
+
+.list .cia_id .cia_tittle {
+    font-size: 1.5rem; /* Changed from 1rem to 1.5rem */
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list .cia_id:nth-child(even) {
+    background-color: #bed;
+}
+
+.cia_id {
+    font-size: 1.5rem;
+}
+
+.cia_id p {
+    font-weight: 600;
+    font-size: smaller;
+}
+
+.cia_id a {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: navy;
+    letter-spacing: 1.1pt;
+}
+
+.cia_image {
+    height: 150px;
+    width: 250px;
+    max-width: 100%; /* Images are jerks - Seattle*/
+}
+
+.list .cia_id img {
+    display: none; /* Essa regra pode ser removida, pois já corrigimos acima */
+}
+
+.button_container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.button_container div {
+    margin-right: 10px; 
+}
+
+.button_container button {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
 }
