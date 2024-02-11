@@ -13,7 +13,7 @@ listButton.addEventListener("click", () => {
 });
 
 // Fetch member data from JSON file
-fetch("/data/members.json")
+fetch("./data/members.json")
     .then(response => response.json())
     .then(data => {
         // Check if data.members is an array
