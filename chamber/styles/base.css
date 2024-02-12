@@ -516,10 +516,10 @@ main {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem;
     background-color: #eee;
-    display: flex; /* Added */
-    flex-direction: column; /* Added */
-    align-items: center; /* Added */
-    justify-content: center; /* Added */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
 }
 
 .grid {
@@ -544,7 +544,7 @@ main {
 
 .grid .cia_tittle {
     font-family: "Caveat", cursive;
-    font-size: 1rem; /* Changed from 1.5rem to 1rem */
+    font-size: 1rem; 
 }
 
 .list {
@@ -563,13 +563,12 @@ main {
     margin: 0 1rem;
 }
 
-/* Esta regra oculta as imagens dentro dos elementos .cia_id apenas quando a classe .list está presente */
 .list .cia_id > img {
     display: none; 
 }
 
 .list .cia_id .cia_tittle {
-    font-size: 1.5rem; /* Changed from 1rem to 1.5rem */
+    font-size: 1.5rem; 
     font-family: Roboto, Helvetica, sans-serif;
 }
 
@@ -596,11 +595,11 @@ main {
 .cia_image {
     height: 150px;
     width: 250px;
-    max-width: 100%; /* Images are jerks - Seattle*/
+    max-width: 100%; 
 }
 
 .list .cia_id img {
-    display: none; /* Essa regra pode ser removida, pois já corrigimos acima */
+    display: none; 
 }
 
 .button_container {
