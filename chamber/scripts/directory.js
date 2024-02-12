@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Fetch member data from JSON file
-    fetch("/data/members.json")
+    fetch("./data/members.json")
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
