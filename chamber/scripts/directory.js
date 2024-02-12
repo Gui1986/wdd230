@@ -22,13 +22,10 @@ document.addEventListener("DOMContentLoaded", function() {
             return response.json();
         })
         .then(data => {
-            // Check if data.members is an array
             if (Array.isArray(data.members)) {
-                // Loop through each member and create HTML elements
                 data.members.forEach(member => {
                     const section = document.createElement("section");
 
-                    // Check if member object contains all required properties
                     if (
                         member.name &&
                         member.address &&
@@ -56,14 +53,12 @@ document.addEventListener("DOMContentLoaded", function() {
                         aWebsite.textContent = "Website";
                         aWebsite.target = "_blank";
 
-                        // Append elements to section
                         section.appendChild(img);
                         section.appendChild(h3);
                         section.appendChild(pAddress);
                         section.appendChild(pPhone);
                         section.appendChild(aWebsite);
 
-                        // Append section to display container
                         display.appendChild(section);
                     } else {
                         console.error("Member data is incomplete:", member);
