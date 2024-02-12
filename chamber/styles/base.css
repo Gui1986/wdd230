@@ -629,3 +629,7 @@ main {
     text-align: center;
     box-shadow: 5px 5px 5px rgb(112, 112, 112);
 }
+
+.business_directory_tittle {
+    text-align: center;
+}
