@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         img.alt = member.name;
                         img.width = 240; 
                         img.height = 120; 
+                        img.classList.add("member-image"); 
 
                         const h3 = document.createElement("h3");
                         h3.textContent = member.name;
@@ -69,4 +70,4 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         })
         .catch(error => console.error("Error fetching member data:", error));
-});
+});     

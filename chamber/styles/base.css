@@ -191,8 +191,8 @@ li {
 }
 
 .whetherToday {
-    text-align: left;
-    font-size: 15px;
+    text-align: center;
+    font-size: 20px;
     color: #3e8f40;
 }
 .card01 {
@@ -216,11 +216,25 @@ li {
     text-align: center;
 }
 .weather-section {
-    margin: 10px;
+    font-size: 15px;
+    margin: 15px;
     text-align: justify;
+    background-color: #e0fad3;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgb(112, 112, 112);
+}
+
+.weather-card {
+    font-weight: bold;
+    margin: 15px;
+    text-align: center;
     background-color: #e0fad3;
     padding: 10px; 
     box-shadow: 5px 5px 5px rgb(112, 112, 112);
+}
+
+h5 {
+    font: 89px;
 }
 
 .card03 {
@@ -631,4 +645,14 @@ main {
 
 .business_directory_tittle {
     text-align: center;
+}
+
+.member-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: column-reverse;
 }

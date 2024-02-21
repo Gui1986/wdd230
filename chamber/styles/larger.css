@@ -81,7 +81,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .weather-section {
+    .weather-section, .weather-card {
         width: 100%;
         float: none;
     }
